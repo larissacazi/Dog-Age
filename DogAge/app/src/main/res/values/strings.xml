@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Dog Age</string>
+    <string name="textDogAge">Enter the age of your dog:</string>
+    <string name="ageDiscovery">DISCOVERY AGE</string>
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_bright"
+    tools:context="zimmermann.larissa.dogage.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/dogSize"
+        android:layout_height="@dimen/dogSize"
+        android:layout_marginTop="25dp"
+        app:srcCompat="@drawable/cachorro"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/ageEnterId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="113dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="@dimen/questionSize" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:padding="10dp"
+        android:text="@string/textDogAge"
+        android:textColor="@android:color/background_light"
+        android:textSize="@dimen/questionSize" />
+
+    <Button
+        android:id="@+id/buttonAgeId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:text="@string/ageDiscovery"
+        android:layout_below="@+id/ageEnterId"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/answerTextId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonAgeId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:textColor="@android:color/background_light"
+        android:textSize="@dimen/resultText" />
+
+</RelativeLayout>
